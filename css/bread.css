@@ -692,6 +692,7 @@ footer {
 }
 footer .footer_logo {
     width:60%;
+    margin:0 auto;
 }
 footer .info{
     margin-top:5vw;
@@ -736,6 +737,7 @@ footer .sns_family {
     justify-content: center;
     align-items:center;
     width:60vw;
+    margin:0 auto;
 }
 footer .sns_family .sns ul {
     display:flex;
@@ -1322,7 +1324,6 @@ footer .sns_family .family .family_list a {
     }
     footer .footer_logo {
         width:20%;
-        margin:0 auto;
     }
     footer .info {
         margin-top:1vw;
@@ -1349,7 +1350,6 @@ footer .sns_family .family .family_list a {
     footer .sns_family {
         flex-flow:row nowrap;
         width:50%;
-        margin:0 auto;
         margin-bottom:1vw;
     }
     footer .sns_family .family {

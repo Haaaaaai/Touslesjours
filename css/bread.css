@@ -1635,6 +1635,9 @@ footer .sns_family .family .family_list a {
     .s2 .banner1 {
         height:65vh;
     }
+    .s2 .banner1 > div {
+        position:absolute;
+    }
     .s2 .banner1 ul {
         grid-template-rows: repeat(2,1fr);
         grid-template-columns: repeat(4,1fr);

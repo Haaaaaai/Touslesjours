@@ -243,9 +243,8 @@ section { position: relative; overflow: hidden;}
 .s1 .vd_area h2 {
     color:#fff;
     font-size:7vw;
-    margin:7.3vw 0;
+    margin:1.5vw 0;
     margin-left:10vw;
-    line-height:1.8rem; 
 }
 .s1 .vd_area ul{
     display:flex;
@@ -319,6 +318,9 @@ section p {
 section .hover {
     display:none;
 }
+.s2 {
+    background-color:#0D4633;
+}
 .s2 .suggest {
     display:flex;
     white-space: nowrap;
@@ -352,38 +354,42 @@ section .hover {
 }
 .s2 .banner1 ul li {
     width:100%;
-    height:140px;
+    height:170px;
     background-repeat: no-repeat;
     text-align:center;
-    padding:2vw 0;
+    padding:4vw 0;
+    padding:4vw 0;
     position:relative;
 }
 .s2 .banner1 ul li:nth-child(odd) {
-    height:120px;
+    height:150px;
 }
 .s2 .banner1 ul li a {
     height:100%;
 }
 .s2 .banner1 ul li .s2_txt {
-    width:70%;
-    /* 볼링핀 위치 고정을 위한 position */
-    position:relative;
+    width:65%;
 }
 .s2 .banner1 ul li:nth-child(odd) .s2_txt {
-    margin-left:27vw;
+    margin-left:29vw;
 }
 .s2 .banner1 .s2_txt p {
     margin:0;
+    /* 볼링핀 위치 고정을 위한 position */
+    position:relative;
 }
 .s2 .banner1 ul li a .s2_txt img {
-height:143px;
-position:absolute;
-top:41%;
-right:1%;
+    height:143px;
+    position:absolute;
+    top:41%;
+    right:16%;
 }
 .s2 .banner1 ul li:nth-child(odd) a .s2_txt img {
-    top:25%;
-    right:-5%; 
+    top:35%;
+    right:-11%; 
+}
+.s2 .banner1 .s2_txt img svg {
+    fill:#ffffff;
 }
 .s2 .banner1 ul li:first-child {
     background-color:#DDD9BB;
@@ -417,14 +423,31 @@ right:1%;
     width:50%;height:48vw;
     background-image: url(../img/valentine.jpg);
     background-position: center;
-    background-size:cover;     
+    background-size:cover;  
+    /* margin 영역의 뚜레쥬르 로고 */
+    position:relative;
 }
 .s2 .banner1 ul li:nth-child(8) {
     width:50%;height:48vw;
     background-image: url(../img/event.jpg);
     background-position: center;
-    background-size:cover;
+    background-size:cover;  
 } 
+.s2 .banner1 ul li:nth-child(7),
+.s2 .banner1 ul li:nth-child(8) {
+    margin-top:13vw;
+}
+.s2 .banner1 ul li:nth-child(7):before {
+    content:"";
+    background-image: url(../img/create_logo.svg);
+    background-position:center;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:absolute;
+    width:100%;
+    top:-19%;left:50%;
+    height:30px;
+}
 .s2 .banner1 ul li:nth-child(7) .s2_txt,
 .s2 .banner1 ul li:nth-child(8) .s2_txt {
     display: none;
@@ -478,7 +501,7 @@ right:1%;
     width:55%;
     text-align:center;
 }
-.s3 .banner2 ul li:first-child { width:30%;}
+.s3 .banner2 ul li:first-child { width:40%;}
 .s3 .banner2 ul li a {
     color:#fff;
     margin:2vw 0;
@@ -1089,11 +1112,16 @@ footer .sns_family .family .family_list a {
         width:auto; height:auto;
         grid-row: 2/3;
         grid-column: 1/2;
+        margin-top:0;
+    }
+    .s2 .banner1 ul li:nth-child(7):before {
+        display:none;
     }
     .s2 .banner1 ul li:nth-child(8) {
         width:auto; height:auto;
         grid-row:1/2;
         grid-column:2/3;
+        margin-top:0;
     } 
     .s2 .banner1 ul li:nth-child(9) {
         display:block;
@@ -1164,6 +1192,7 @@ footer .sns_family .family .family_list a {
         padding:2px 20px;
         margin-top:30%;
     }
+    
     .s3 {
         height:100vh;
         background-image: url(../img/main_banner2.png);
@@ -1192,6 +1221,9 @@ footer .sns_family .family .family_list a {
     }
     .s3 .banner2 ul li {
         width:30%;
+    }
+    .s3 .banner2 ul li:first-child {
+        width:25%;
     }
     .s3 .banner2 ul li:nth-child(2) {
         width:38%;
@@ -1290,6 +1322,7 @@ footer .sns_family .family .family_list a {
     }
     footer .footer_logo {
         width:20%;
+        margin:0 auto;
     }
     footer .info {
         margin-top:1vw;
@@ -1314,9 +1347,10 @@ footer .sns_family .family .family_list a {
         color:#d0cfcf;
     }
     footer .sns_family {
-        margin-top:1vw;
         flex-flow:row nowrap;
         width:50%;
+        margin:0 auto;
+        margin-bottom:1vw;
     }
     footer .sns_family .family {
         margin: 3vw 2vw;
@@ -1499,6 +1533,7 @@ footer .sns_family .family .family_list a {
     /* pc버전 내비게이션 */
     header .menu nav {
         margin-top:0;
+        margin-left:30px;
         padding:0;
         /* width:100%; */
     }
@@ -1509,7 +1544,7 @@ footer .sns_family .family .family_list a {
         width:70%;
     }
     header .menu nav > ul > li {
-        padding:0 0.6vw;
+        padding:0 0.8vw;
         /* 서브메뉴 position */
         position:relative;
     }
@@ -1659,6 +1694,7 @@ footer .sns_family .family .family_list a {
     }
     .s4 h1 {
         font-size:40px;
+        margin-top:2vw;
     }
     .s4 p {
         font-size:23px;
@@ -1684,8 +1720,8 @@ footer .sns_family .family .family_list a {
     .s4 svg {
         position:absolute;
         /* z-index:0; */
-        transform:rotate(-10deg);
-        right:-5%;top:-5%;
+        top:38%;
+        left:50%;transform:translateX(-50%);
     }
     section .hover {
         display:block;

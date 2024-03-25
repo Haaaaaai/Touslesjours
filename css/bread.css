@@ -916,12 +916,12 @@ footer .sns_family .family .family_list a {
     section h1 {
         font-size:40px;
         margin:4.5vw;
-        margin-left:13.2vw;
+        margin-left:12.5vw;
     }
     section p {
         font-size:25px;
         line-height:30px;
-        margin-left:13.5vw;
+        margin-left:12.5vw;
     }
     section hr {
         display:block;
@@ -994,11 +994,12 @@ footer .sns_family .family .family_list a {
         padding-bottom:10vw;
     }
     .s2 h1 {
+        margin-top:6vw;
         margin-bottom:1.3vw;
     }
     .s2 .suggest {
         background-image: none;
-        height:20vw;
+        height:25vw;
         /* .sgt_right 로고의 position 설정 */
         position:relative;
     }
@@ -1105,7 +1106,7 @@ footer .sns_family .family .family_list a {
     .s2 .banner1 ul li .hover {
         display:block;
         width:100%; height:100%;
-        background-color: rgba(219, 219, 219, 0.434);
+        background-color: rgba(255, 255, 255, 0.55);
         opacity:0;
         transition:all 0.3s;
     }
@@ -1181,7 +1182,7 @@ footer .sns_family .family .family_list a {
         font-weight:500;
     }
     .s3 .banner2 {
-        background-color: #9f7f2c76;
+        background-color: #9f7f2c9d;
     }
     .s3 .banner2 ul {
         width:80%;
@@ -1201,6 +1202,9 @@ footer .sns_family .family .family_list a {
         margin-top:2vw;
         margin-bottom:0;
     }
+    .s3 .banner2 ul li a svg {
+        width: 13vh;height:13vh;
+    }
     .s3 .banner2 ul li p {
         font-size: 20px;
         font-weight: 500;
@@ -1212,17 +1216,16 @@ footer .sns_family .family .family_list a {
         position:relative;
     }
     .s4 h1 {
-        margin:3vw 0 1vw 7vw;
+        margin:7vw 0 1vw 12.5vw;
     }
     .s4 p {
-        margin-left:7vw;
+        margin-left:12.5vw;
         font-size:2vw;
         line-height:3.3vw;
     }
     .s4 .banner3 {
-        margin-top:1vw;
-        width:92%;
-        margin:1vw auto 3vw;
+        width:80%;
+        margin:2vw auto 3vw;
     }
     .s4 .banner3 ul {
         font-size:1.5vw;
@@ -1232,17 +1235,20 @@ footer .sns_family .family .family_list a {
         width:30%;
     }
     .s4 .banner3 ul li .photo {
-        width:100%;height:27vw;
+        width:100%;height:23vw;
     }
     .s4 .banner3 ul li span {
         margin-top:1vw;
         text-overflow: ellipsis;
         overflow: hidden;
         white-space: nowrap;
-        font-size:20px;
+        font-size:18px;
     }
     .s4 .banner3 ul li span br {
         display:none;
+    }
+    .s4 svg {
+        margin:0 auto;
     }
     .s5 {
         display:flex;
@@ -1250,15 +1256,13 @@ footer .sns_family .family .family_list a {
     }
     .s5 h1 {
         font-size:3.2vw;
-        margin:4vw 0 2vw 3vw;
+        margin:7vw 0 2vw 12.5vw;
     }
     .s5 p {
         font-size:2vw;
         line-height:2.8vw;
         font-weight:500;
-    }
-    .s5 h1, .s5 p {
-        margin-left:7vw;
+        margin-left:12.5vw;
     }
     .s5 .banner4 ul li {
         width:50%; height:32vh;
@@ -1369,9 +1373,9 @@ footer .sns_family .family .family_list a {
         /*flex-flow : row wrap;*/ /*행기준 줄바꿈 허용, 모바일은 허용x*/
     }
     header .logo {
-        width: 295px;
-        height:110px;
-        top:10%;left:auto;
+        width: 230px;
+        height:85px;
+        top:17%;left:auto;
         right:65vw;
     }
     header .logo a {
@@ -1505,7 +1509,7 @@ footer .sns_family .family .family_list a {
         width:70%;
     }
     header .menu nav > ul > li {
-        padding:0 1vw;
+        padding:0 0.6vw;
         /* 서브메뉴 position */
         position:relative;
     }
@@ -1565,12 +1569,12 @@ footer .sns_family .family .family_list a {
     }
     section h1 {
         font-size:40px;
-        margin-left:18vw;
+        margin-left:22vw;
     }
     section p {
         font-size:25px;
         line-height:30px;
-        margin-left:18vw;
+        margin-left:22vw;
     }
     .s1 {
         height:100%;
@@ -1623,7 +1627,7 @@ footer .sns_family .family .family_list a {
     .s3 .s3_top h1 {
         font-size:40px;
         margin-top:2vw;
-        margin-left:18vw;
+        margin-left:22vw;
     }
     .s3 .banner2 ul {
         width:58%; 
@@ -1639,12 +1643,16 @@ footer .sns_family .family .family_list a {
         display:flex;
         /* s4 배경의 position */
         position:relative;
-        padding-bottom:0;/
+        padding-bottom:0;
     }
-    .s4 > div > div { display:flex;}
+    .s4 > div > div {
+        width:60%;
+        display:flex;
+        justify-content: center;
+        margin:0 auto;
+    }
     .s4_txt {
-        margin-top:7vw;
-        width:25%;
+        width:20%;
     }
     .s4_txt br {
         display:none;
@@ -1660,11 +1668,15 @@ footer .sns_family .family .family_list a {
         margin-left:17%;
     }
     .s4 .banner3 {
-        width:66%;
+        width:72%;
         z-index:100;
+        margin:1vw auto;
+    }
+    .s4 .banner3 ul li {
+        margin:0.4vw;
     }
     .s4 .banner3 ul li .photo {
-        width:100%; height:19vw;
+        width:100%; height:12vw;
     }
     .s4 .banner3 ul li span {
         font-size:20px;
@@ -1673,7 +1685,7 @@ footer .sns_family .family .family_list a {
         position:absolute;
         /* z-index:0; */
         transform:rotate(-10deg);
-        right:0;
+        right:-5%;top:-5%;
     }
     section .hover {
         display:block;
@@ -1681,21 +1693,24 @@ footer .sns_family .family .family_list a {
     .s5 > div > div {
         display:flex;
         height:100%;
-        justify-content:space-between;
+        justify-content:right;
     }
     .s5 h1 {
         font-size:38px;
-        margin:6vw 0 2vw 3vw;
+        margin:10vw 0 2vw 3vw;
     }
     .s5 p {
-        font-size:23px;
+        font-size:20px;
         line-height:35px;
     }
     .s5 h1, .s5 p {
         margin-left:5vw;
     }
+    .s5 .s5_text {
+        margin-right:2vw;
+    }
     .s5 .banner4 {
-        width:60%;
+        width:54%;
         margin-top:0;
     }
     .s5 .banner4 ul {

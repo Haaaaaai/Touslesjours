@@ -385,7 +385,7 @@ section .hover {
     right:16%;
 }
 .s2 .banner1 ul li:nth-child(odd) a .s2_txt img {
-    top:35%;
+    top:36%;
     right:-11%; 
 }
 .s2 .banner1 .s2_txt img svg {
@@ -445,7 +445,7 @@ section .hover {
     background-repeat: no-repeat;
     position:absolute;
     width:100%;
-    top:-19%;left:50%;
+    top:-22%;left:50%;
     height:30px;
 }
 .s2 .banner1 ul li:nth-child(7) .s2_txt,
@@ -896,7 +896,7 @@ footer .sns_family .family .family_list a {
         font-size:13px;
     }
     header .menu .menu_in {
-        height:110px;
+        height:140px;
         padding:2vw;
     }
     header .menu .menu_in .search_lang {
@@ -992,7 +992,7 @@ footer .sns_family .family .family_list a {
         text-shadow: 1px 1px 10px #1f1f1f;
     }
     .s1 .vd_area ul {
-        margin: 65% auto 5vw;
+        margin: 60% auto 5vw;
         width:100%;
         flex-flow:row nowrap;
     }
@@ -1024,7 +1024,7 @@ footer .sns_family .family .family_list a {
     }
     .s2 .suggest {
         background-image: none;
-        height:25vw;
+        height:22vw;
         /* .sgt_right 로고의 position 설정 */
         position:relative;
     }
@@ -1153,6 +1153,7 @@ footer .sns_family .family .family_list a {
         padding:10% 3% 0;
         margin:0 auto;
         transition:all 0.3s;
+        position:absolute;
     }
     .s2 .banner1 ul li:hover .s2_txt,
     .s2 .banner1 ul li:hover .hover {
@@ -1200,11 +1201,11 @@ footer .sns_family .family .family_list a {
         background-image: url(../img/main_banner2.png);
     }
     .s3 .s3_top {
-        height:38%;
+        height:40%;
     }
     .s3 .s3_top h1 {
         font-size:40px;
-        margin-top:7vw;
+        margin-top:5vw;
         margin-left:13.2vw
     }
     .s3 .s3_top p {
@@ -1214,6 +1215,7 @@ footer .sns_family .family .family_list a {
     }
     .s3 .banner2 {
         background-color: #9f7f2c9d;
+        padding:1vw;
     }
     .s3 .banner2 ul {
         width:80%;
@@ -1293,7 +1295,7 @@ footer .sns_family .family .family_list a {
         margin:7vw 0 2vw 12.5vw;
     }
     .s5 p {
-        font-size:2vw;
+        font-size:1.8vw;
         line-height:2.8vw;
         font-weight:500;
         margin-left:12.5vw;
@@ -1308,7 +1310,7 @@ footer .sns_family .family .family_list a {
         height:100%;
     }
     .s5 .banner4 ul li .txt h2 {
-        font-size:3vw;
+        font-size:2.8vw;
     }
     .s5 .banner4 ul li .txt hr {
         width:50%;
@@ -1316,8 +1318,11 @@ footer .sns_family .family .family_list a {
     }
     .s5 .banner4 ul li .txt p {
         margin-top:1vw;
-        font-size:2vw;
+        font-size:1.8vw;
         line-height:2rem;
+    }
+    .s5 .banner4 ul li .small_deco {
+        width:4vw; height:4vw;
     }
     footer {
         padding:3vw 2vw 0;
@@ -1329,8 +1334,8 @@ footer .sns_family .family .family_list a {
         margin-top:1vw;
     }
     footer .info ul li a {
-        font-size:1.6vw;
-        padding:5px 13px;
+        font-size:1.4vw;
+        padding:1px 13px;
         color:#d0cfcf;
     }
     footer address {
@@ -1410,7 +1415,7 @@ footer .sns_family .family .family_list a {
         width: 230px;
         height:85px;
         top:17%;left:auto;
-        right:65vw;
+        right:66vw;
     }
     header .logo a {
         width:100%;
@@ -1618,7 +1623,7 @@ footer .sns_family .family .family_list a {
         height:100%;top:60%;
     }
     .s1 .vd_area ul {
-        margin :90% auto 0;
+        margin :80% auto 0;
     }
     .s1 .vd_area li .circle img {
         padding:5%;
@@ -1664,7 +1669,7 @@ footer .sns_family .family .family_list a {
     }
     .s3 .s3_top h1 {
         font-size:40px;
-        margin-top:2vw;
+        margin-top:1vw;
         margin-left:22vw;
     }
     .s3 .banner2 ul {
@@ -1700,7 +1705,7 @@ footer .sns_family .family .family_list a {
         margin-top:2vw;
     }
     .s4 p {
-        font-size:23px;
+        font-size:20px;
         line-height:35px;
     }
     .s4 h1, .s4 p {
@@ -1718,7 +1723,7 @@ footer .sns_family .family .family_list a {
         width:100%; height:12vw;
     }
     .s4 .banner3 ul li span {
-        font-size:20px;
+        font-size:18px;
     }
     .s4 svg {
         position:absolute;

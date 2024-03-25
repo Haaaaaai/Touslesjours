@@ -53,7 +53,7 @@ $(function(){
 
         //1400px이상일 때, search버튼의 테두리 활성화
         /*
-        let sch=$("input:text");
+        
         $(sch).focus(function(){
         $(this).css("border","solid 3px green");
         });
@@ -62,6 +62,7 @@ $(function(){
         });
         */
         //1400px이상일 때, 돋보기 빈칸으로 버튼 클릭 시의 알림창
+        let sch=$("input:text");
         $(".search_icon").click(function(){
             if($(sch).val()===""){
                 alert("검색어를 입력하세요");
@@ -86,5 +87,14 @@ $(function(){
 
     
 });
+
+//자바스크립트 작성
+function movesection(sectionId) {
+    var section = document.getElementById(sectionId);
+    if (section) {
+        section.scrollIntoView({ behavior: 'smooth', block: 'start' });
+
+    }
+};
     
     

@@ -45,6 +45,7 @@ $(function(){
             $(".sub").stop().slideUp();
             $(".sub_bg").stop().slideUp();
         });
+        
         //pc버전 스크롤 하면 화면 단위로 이동
         $(".fullpage").fullpage({
             navigation:true
@@ -77,7 +78,7 @@ $(function(){
         $(this).find("span").css("transform","rotate(-180deg)");
         $(".family_list").slideDown();
     })
-    $(".family_title a").mouseleave(function(e){
+    $(".family").mouseleave(function(e){
         e.preventDefault();
         $(this).find("span").css("transform","rotate(0deg)");
         $(".family_list").slideUp();

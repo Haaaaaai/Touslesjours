@@ -34,13 +34,13 @@ $(function(){
         });
 
         //메인 배너의 버튼 클릭하면 화면 이동
-        /*$(".scroll").on('click',function(e){
+        $(".scroll").on('click',function(e){
             e.preventDefault();
             var target = $(this).attr('href');
             $('html, body').animate({
                 scrollTop: $(target).offset().top // 해당 섹션의 상단으로 스크롤링
             }, 1000);
-        });*/
+        });
     } else {
         //pc버전 내비게이션
         //주메뉴 위에 마우스를 올리면

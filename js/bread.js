@@ -32,8 +32,19 @@ $(function(){
                 $(this).next().slideUp();
             }
         });
-
+        /*
         //메인 배너의 버튼 클릭하면 화면 이동
+        $('.scroll').on('click', function(event) {
+            event.preventDefault(); // 기본 링크 동작 방지
+            var target = $(this).attr('href'); // 클릭된 링크의 href 속성값 가져오기
+            var sectionOffsetTop = $(target).offset().top; // 해당 섹션의 상단 위치 가져오기
+            
+            // animate() 함수를 사용하여 스크롤 애니메이션 적용
+            $('html, body').animate({
+                scrollTop: sectionOffsetTop
+            }, 1000); // 스크롤 시간 (1초)
+        });
+        */
         $(".scroll").on('click',function(e){
             e.preventDefault();
             var target = $(this).attr('href');

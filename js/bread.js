@@ -44,14 +44,19 @@ $(function(){
                 scrollTop: sectionOffsetTop
             }, 1000); // 스크롤 시간 (1초)
         });
-        */
+        */  
+       //section1의 아이콘을 클릭하면 해당 section으로 이동(태블릿, 모바일)
         $(".scroll").on('click',function(e){
             e.preventDefault();
-            var target = $(this).attr('href');
-            $('html, body').animate({
-                scrollTop: $(target).offset().top // 해당 섹션의 상단으로 스크롤링
-            }, 1000);
+            var target = $(this).attr('data');
+            scrollToAnchor(target);
         });
+        function scrollToAnchor(target){
+            var res=$("section[name='"+target+"']");
+            $('html, body').animate({                
+                scrollTop: res.offset().top // 해당 섹션의 상단으로 스크롤링
+            }, 1000);
+        }      
     } else {
         //pc버전 내비게이션
         //주메뉴 위에 마우스를 올리면
@@ -89,6 +94,7 @@ $(function(){
         });
         */
     };
+
     
     
 

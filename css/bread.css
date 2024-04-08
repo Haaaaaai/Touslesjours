@@ -345,14 +345,14 @@ section .hover {
     text-align: right;
     font-weight:bold;
 }
-.s2 .banner1 {
+.s2 .banner1 .mo_bn {
     width:100%;
 }
-.s2 .banner1 ul {
+.s2 .banner1 .mo_bn ul {
     display:flex;
     flex-flow:row wrap; /*행기준 줄바꿈 허용 */
 }
-.s2 .banner1 ul li {
+.s2 .banner1 .mo_bn ul li {
     width:100%;
     height:170px;
     background-repeat: no-repeat;
@@ -361,65 +361,65 @@ section .hover {
     padding:4vw 0;
     position:relative;
 }
-.s2 .banner1 ul li:nth-child(odd) {
+.s2 .banner1 .mo_bn ul li:nth-child(odd) {
     height:150px;
 }
-.s2 .banner1 ul li a {
+.s2 .banner1 .mo_bn ul li a {
     height:100%;
 }
-.s2 .banner1 ul li .s2_txt {
+.s2 .banner1 .mo_bn ul li .s2_txt {
     width:65%;
 }
-.s2 .banner1 ul li:nth-child(odd) .s2_txt {
+.s2 .banner1 .mo_bn ul li:nth-child(odd) .s2_txt {
     margin-left:29vw;
 }
-.s2 .banner1 .s2_txt p {
+.s2 .banner1 .mo_bn .s2_txt p {
     margin:0;
     /* 볼링핀 위치 고정을 위한 position */
     position:relative;
 }
-.s2 .banner1 ul li a .s2_txt img {
+.s2 .banner1 .mo_bn ul li a .s2_txt img {
     height:143px;
     position:absolute;
     top:41%;
     right:16%;
 }
-.s2 .banner1 ul li:nth-child(odd) a .s2_txt img {
+.s2 .banner1 .mo_bn ul li:nth-child(odd) a .s2_txt img {
     top:36%;
     right:-11%; 
 }
-.s2 .banner1 .s2_txt img svg {
+.s2 .banner1 .mo_bn .s2_txt img svg {
     fill:#ffffff;
 }
-.s2 .banner1 ul li:first-child {
+.s2 .banner1 .mo_bn ul li:first-child {
     background-color:#DDD9BB;
     background-image: url(../img/s2_malchaChoco.png);
     background-position: left;
     background-size: 33%;
 }
-.s2 .banner1 ul li:nth-child(2) {
+.s2 .banner1 .mo_bn ul li:nth-child(2) {
     background-color:#FFF9C8;
     background-image: url(../img/s2_malchaCream.png);
     background-position: right;
     background-size: 35%;
 }
-.s2 .banner1 ul li:nth-child(3) {
+.s2 .banner1 .mo_bn ul li:nth-child(3) {
     background-color:#D6CFBC;
     background-image: url(../img/s2_blueBerry.png);
     background-position: left;
     background-size: 35%;
 }
-.s2 .banner1 ul li:nth-child(4) {
+.s2 .banner1 .mo_bn ul li:nth-child(4) {
     background-color: #E6DD89;
     background-image: url(../img/s2_rollCake.png);
     background-position: right;
     background-size: 35%;
 }
-.s2 .banner1 ul li:nth-child(5),
-.s2 .banner1 ul li:nth-child(6) {
+.s2 .banner1 .mo_bn ul li:nth-child(5),
+.s2 .banner1 .mo_bn ul li:nth-child(6) {
     display:none;
 }
-.s2 .banner1 ul li:nth-child(7) {
+.s2 .banner1 .mo_bn ul li:nth-child(7) {
     width:50%;height:48vw;
     background-image: url(../img/valentine.jpg);
     background-position: center;
@@ -427,17 +427,17 @@ section .hover {
     /* margin 영역의 뚜레쥬르 로고 */
     position:relative;
 }
-.s2 .banner1 ul li:nth-child(8) {
+.s2 .banner1 .mo_bn ul li:nth-child(8) {
     width:50%;height:48vw;
     background-image: url(../img/event.jpg);
     background-position: center;
     background-size:cover;  
 } 
-.s2 .banner1 ul li:nth-child(7),
-.s2 .banner1 ul li:nth-child(8) {
+.s2 .banner1 .mo_bn ul li:nth-child(7),
+.s2 .banner1 .mo_bn ul li:nth-child(8) {
     margin-top:13vw;
 }
-.s2 .banner1 ul li:nth-child(7):before {
+.s2 .banner1 .mo_bn ul li:nth-child(7):before {
     content:"";
     background-image: url(../img/create_logo.svg);
     background-position:center;
@@ -448,17 +448,18 @@ section .hover {
     top:-22%;left:50%;
     height:30px;
 }
-.s2 .banner1 ul li:nth-child(7) .s2_txt,
-.s2 .banner1 ul li:nth-child(8) .s2_txt {
+.s2 .banner1 .mo_bn ul li:nth-child(7) .s2_txt,
+.s2 .banner1 .mo_bn ul li:nth-child(8) .s2_txt {
     display: none;
 }
-.s2 .banner1 ul li:nth-child(9) {
+.s2 .banner1 .mo_bn ul li:nth-child(9) {
     display:none;
 }
-.s2 .banner1 ul li .hover {
+.s2 .banner1 .mo_bn ul li .hover {
     position:absolute;
     top:0; left:0;
 }
+.s2 .banner1 .swiper { display:none;}
 /* s3 영역 시작 */
 .s3 {
     background-image: url(../img/s3_bg.jpg);
@@ -581,11 +582,11 @@ section .hover {
     display:block;
     margin-top:1.3vw;
 }
-.s4 svg {
+.s4 img {
     display:block;
-    width:102%;
-    height:100%;
-    margin:3vw auto 1vw;
+    width:80%;height:100%;
+    opacity:0.6;
+    margin:3vw auto 3vw;
 }
 .s5 {
     background-color: #4C766C ;
@@ -889,8 +890,8 @@ footer .sns_family .family .family_list a {
         width:1.8vw;height:1.8vw;
         margin-right:0.5vw;
     }
-    header .pc_top_menu ul li:last-child a span {
-        width:1.3vw;height:1.3vw;
+    header .pc_top_menu ul li:last-child a span img {
+        height:90%;
     }
     header .pc_top_menu ul li a p {
         font-size:13px;
@@ -981,7 +982,7 @@ footer .sns_family .family .family_list a {
     .s1 .vd_area {
         padding:2vw;
         position:absolute;
-        left:50%;top:-10%;
+        left:50%;top:60%;
         transform:translate(-50%,0%);
     }
     .s1 .vd_area h2 {
@@ -992,9 +993,9 @@ footer .sns_family .family .family_list a {
         text-shadow: 1px 1px 10px #1f1f1f;
     }
     .s1 .vd_area ul {
-        margin: 80% auto 5vw;
         width:100%;
         flex-flow:row nowrap;
+        margin:0 auto;
     }
     .s1 .vd_area ul li {
         width:180px;
@@ -1012,10 +1013,10 @@ footer .sns_family .family .family_list a {
     }
     .s1 .vd_area li:last-child .circle:hover svg {
         fill:#fff;
-    }
+    }    
     .s2 {
         background-color:#F2ECBE;
-        /* height:80vw; */
+        /* height:80vw;    */
         padding-bottom:10vw;
     }
     .s2 h1 {
@@ -1025,7 +1026,7 @@ footer .sns_family .family .family_list a {
     .s2 .suggest {
         background-image: none;
         height:22vw;
-        /* .sgt_right 로고의 position 설정 */
+        /* .sgt_right 로고의 position 설정    주석 */
         position:relative;
     }
     .s2 .suggest .sgt_left,
@@ -1050,12 +1051,13 @@ footer .sns_family .family .family_list a {
         background-size: cover;
         width:22vw; height:22vw;
         z-index:49;
-        opacity:80%;
-        top:80px; right:0;
+        opacity:60%;
+        top:60px; right:0;
     }
+    /*
     .s2 .banner1 {
         width:90vw;
-        /* height:60vw; */
+        height:60vw;   주석
         margin:0 auto;
     }
     .s2 .banner1 ul {
@@ -1167,7 +1169,7 @@ footer .sns_family .family .family_list a {
         font-size:30px;
         width:100%;
     }
-    /* 영역 안에 글자 배치를 위한 너비 조정 */
+    영역 안에 글자 배치를 위한 너비 조정   주석
     .s2 .banner1 ul li:first-child .s2_txt h2 {
         margin:0 auto;
         width:88%;
@@ -1194,8 +1196,99 @@ footer .sns_family .family .family_list a {
         border:5px solid #3d3325a3;
         padding:2px 20px;
         margin-top:30%;
+    }*/
+    /* ------------------------------- */
+    .s2 .mo_bn {display:none;}
+    .s2 .banner1 .swiper {
+        display:block;
+        width: 75vw;
+        height: 30vw;
+        margin:0 auto;
     }
-    
+    .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .swiper-slide .s2h2 {
+        width:100%; height:100%;
+        background-color: #f2ecbe;
+    }
+    .swiper-slide h2 {
+        font-size:20px;
+        margin:0 auto;
+        padding:10px;
+    }
+    .swiper-button-next, .swiper-button-prev {
+        text-shadow: 5px 5px 5px rgb(110, 109, 109);
+    }
+    .swiper .swiper-slide a {
+        /* position:relative; */
+        width:100%;height:100%;
+    }
+    .swiper .swiper-slide a .photo {
+        position:relative;
+        width:100%; height:80%;
+    }
+    .swiper .swiper-slide a .hover,
+    .swiper .swiper-slide a .s2_txt {
+        position:absolute;   
+        top:0;
+    }
+    .swiper .swiper-slide a > div > div {
+        /* position:absolute; */
+        transition:all 0.3s;
+        width:100%;
+        height:85%;
+        overflow: hidden;
+    }
+    .swiper .swiper-slide .hover {
+        display:block;
+        /* width:100%; height:100%; */
+        background-color:rgba(255, 255, 255, 0.26);
+    }
+    .swiper-slide .photo img {
+        display: block;
+        width:100%;
+        height: 100%;
+        object-fit: cover;
+    }
+    .swiper .s2_txt {
+        padding:15px;
+        width:100%; height:86%;
+        display:flex;
+        flex-flow:column nowrap;
+        justify-content: center;
+        color:#251208
+    }
+    .swiper .s2_txt br {
+        display:none;
+    }
+    .swiper .s2_txt p {
+        width:90%;
+        font-size:20px;
+        margin:0 auto;
+        /* position:relative; */
+    }
+    .swiper .s2_txt img {
+        display:none;
+    }
+    .swiper .s2_txt span {
+        display:inline-block;
+        font-weight:bold;
+        font-size:25px;
+        color:#463b2d;
+        border-radius: 30px;
+        border:3px solid #353d25e4;
+        /* padding:2px 1px; */
+        margin:0 auto;
+        width:200px;
+    }
+      
+    /* ------------------------------- */
     .s3 {
         height:100vh;
         background-image: url(../img/main_banner2.png);
@@ -1379,8 +1472,6 @@ footer .sns_family .family .family_list a {
         margin: 0 1vw;
         width:30px;height:30px;
     }
-    footer .sns_family .sns ul li a {
-    }
 }
 
 
@@ -1400,7 +1491,6 @@ footer .sns_family .family .family_list a {
 @media screen and (min-width:1400px) {
     header {
         height:140px;
-        /* position:inherit; */
     }
     header .center_box {
         width:1440px;
@@ -1619,15 +1709,14 @@ footer .sns_family .family .family_list a {
     .s1 {
         height:100%;
     }
+    
     .s1 .vd iframe {
         height:100%;top:60%;
-    }
-    .s1 .vd_area ul {
-        margin :90% auto 0;
     }
     .s1 .vd_area li .circle img {
         padding:5%;
     }
+    
     .s2 {
         padding:0;
     }
@@ -1637,6 +1726,7 @@ footer .sns_family .family .family_list a {
     .s2 h1 {
         margin-top:7%;
     }
+    /*
     .s2 .banner1 {
         height:65vh;
     }
@@ -1663,6 +1753,20 @@ footer .sns_family .family .family_list a {
     }
     .s2 .banner1 ul li:nth-child(6) a .s2_txt img {
         top:45%;
+    }*/
+    .swiper .swiper-slide .hover,
+    .swiper .swiper-slide .s2_txt {
+        opacity:0;
+    }
+    .swiper .swiper-slide:hover .hover,
+    .swiper .swiper-slide:hover .s2_txt {
+        opacity:1;
+    }
+    .swiper {
+        width:60vw;height:24vw;
+    }
+    .s2 .banner1 .swiper {
+        width:60vw; height:24vw;
     }
     .s3 .s3_top {
         height:32%;
@@ -1692,6 +1796,7 @@ footer .sns_family .family .family_list a {
         width:60%;
         display:flex;
         justify-content: center;
+        flex-flow:row wrap;
         margin:0 auto;
     }
     .s4_txt {
@@ -1725,11 +1830,13 @@ footer .sns_family .family .family_list a {
     .s4 .banner3 ul li span {
         font-size:18px;
     }
-    .s4 svg {
+    .s4 img {
         position:absolute;
         /* z-index:0; */
-        top:38%;
-        left:50%;transform:translateX(-50%);
+        bottom:10%;left:12%;
+        transform:rotate(-5deg) scale(1.4);
+        height:auto;
+        opacity:0.4;
     }
     section .hover {
         display:block;

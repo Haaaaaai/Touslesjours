@@ -563,7 +563,7 @@ section .hover {
 }
 .s4 img {
     display:block;
-    width:80%;height:100%;
+    width:80%;height:auto;
     opacity:0.6;
     margin:3vw auto 3vw;
 }
